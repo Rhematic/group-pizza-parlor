@@ -1,0 +1,19 @@
+.pizza-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 300px;
+
+  }
+  
+  .pizza-stack {
+    margin-right: 12px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .pizza-stack .MuiPaper-root {
+    border: 1px solid #ccc;
+  }
