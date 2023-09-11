@@ -11,7 +11,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function DirectionStack() {
+export default function DirectionStack({children}) {
   return (
     <div>
       <Stack 
@@ -23,6 +23,7 @@ export default function DirectionStack() {
                 m: 2,
               }}
               direction="row" spacing={1}>
+            {children}
       </Stack>
     </div>
   );

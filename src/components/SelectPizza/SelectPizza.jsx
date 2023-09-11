@@ -8,9 +8,9 @@ const SelectPizza = () => {
   const pizzas = useSelector((store) => store.pizzas);
 
   return pizzas.map((pizza) => (
-    <CustomBox key={pizza.id}>
+    <div key={pizza.id}>
       <SelectPizzaItem pizza={pizza} />
-    </CustomBox>
+    </div>
   ));
 };
 
