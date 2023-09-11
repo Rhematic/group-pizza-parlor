@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
+import SelectPizzaItem from "../SelectPizzaItem/SelectPizzaItem";
+import CustomBox from "../Box/Box";
+
+import { useSelector } from "react-redux";
 
 const SelectPizza = () => {
-  return (
-    <div>SelectPizza</div>
-  )
-}
+  const pizzas = useSelector((store) => store.pizzas);
 
-export default SelectPizza
+  return pizzas.map((pizza) => (
+    <CustomBox key={pizza.id}>
+      <SelectPizzaItem pizza={pizza} />
+    </CustomBox>
+  ));
+};
+
+export default SelectPizza;

@@ -2,8 +2,8 @@ import React from 'react'
 
 const CustomerInformation = () => {
   return (
-    <div>CustomerInformation</div>
+    <div>CustomerInformation test</div>
   )
 }
 
-export default CustomerInformation
+export default CustomerInformation;
