@@ -10,8 +10,10 @@ dispatch({ type: 'ADD_TO_CART', payload: pizza})
     
   return (
     <div>
-      <img src={pizza.image_path} width="20%" height="20%"/>
-      <h2>{pizza.name}</h2> {pizza.description} <br /> ${pizza.price}
+      <img src={pizza.image_path} width="40%" height="40%"/>
+      <h2>{pizza.name}</h2> {pizza.description} <br /> 
+      <b>${pizza.price}</b>
+      <br/>
       <button onClick={addPizzaToCart}>Add to Cart</button> 
     </div>
   );

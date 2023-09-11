@@ -5,6 +5,8 @@ function CustomBox ({children}) {
         <Box
         component="div"
         sx={{
+          width: 200,
+          height: 300,
           display: "inline-block",
           border: "1px solid black",
           borderRadius: 8,
